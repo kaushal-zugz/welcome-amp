@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <script async src="https://cdn.ampproject.org/amp-story-player-v0.js"></script>
+  <script async src="./js/main.js" type="module"></script>
+  <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css">
+
+  <link href="./styles/main.css" rel="stylesheet" type="text/css">
+  <link href="./styles/header.css" rel="stylesheet" type="text/css">
+  <link href="./styles/hero.css" rel="stylesheet" type="text/css">
+  <link href="./styles/cards.css" rel="stylesheet" type="text/css">
+  <link href="./styles/carousel.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Web Player</title>
+</head>
+
+<body>
+
+  <!--   header  -->
+  <div class="container">
+    <span class="title">Welcome to Zugz</span>
+    <div class="card-list">
+      <div class="entry-point-card-container">
+        <img src="https://zimages.zugz.org/ztories_05ae50aefe" class="entry-point-card-img" alt="A cat">
+        <div class="card-headline-container">
+          <span class="entry-point-card-headline"> Freddie Mercury </span>
+        </div>
+      </div>
+
+      <div class="entry-point-card-container">
+        <img src="https://zimages.zugz.org/ztories_9bdef78ec6" class="entry-point-card-img" alt="A cat">
+        <div class="card-headline-container">
+          <span class="entry-point-card-headline"> Princess Diana </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-list" style="margin-top: 15px">
+      <div class="entry-point-card-container">
+        <img src="https://zimages.zugz.org/ztories_7ec7e9d714" class="entry-point-card-img" alt="A cat">
+        <div class="card-headline-container">
+          <span class="entry-point-card-headline"> Michael Jordan </span>
+        </div>
+      </div>
+
+
+      <div class="entry-point-card-container">
+        <img src="https://zimages.zugz.org/ztories_ceef4e876d" class="entry-point-card-img" alt="A cat">
+        <div class="card-headline-container">
+          <span class="entry-point-card-headline"> Vitalik Buterin </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="/stories/77a6c7128c,f855d29fd3,4031c35302,9b942f1812?ref=wc">Let's go!</a>
+    </div>
+  </div>
+
+  
+  <!-- Lightbox and player -->
+  <div class="lightbox closed">
+    <amp-story-player class="my-player">
+      <script type="application/json">
+        {
+          "behavior": {
+            "pageScroll": false,
+            "autoplay": false
+          },
+          "controls": [{
+              "name": "close",
+              "position": "start"
+            },
+            {
+              "name": "skip-to-next"
+            }
+          ]
+        }
+      </script>
+      <a href="/freddie-mercury/"></a>
+      <a href="/princess-diana/"></a>
+      <a href="/micheal-jordan/"></a>
+      <a href="/vitalik-buterin/"></a>
+    </amp-story-player>
+  </div>
+
+</body>
+
+</html>
